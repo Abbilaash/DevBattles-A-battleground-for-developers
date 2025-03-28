@@ -129,6 +129,12 @@ def end_competition(competition_id):
 
 
 
+
+
+@admin_bp.route("/test", methods=["GET"])
+def test():
+    return jsonify({"message": "Test successful!"}), 200
+
     
 
 # Admin Logout
